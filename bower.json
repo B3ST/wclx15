@@ -1,0 +1,11 @@
+{
+  "name": "presentation-b3",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages",
+    "bespoke-theme-nebula": "~1.0.1"
+  },
+  "devDependencies": {
+    "bespoke-theme-nebula": "~1.0.1"
+  }
+}

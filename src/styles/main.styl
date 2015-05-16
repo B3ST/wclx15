@@ -1,0 +1,128 @@
+// New to Stylus? Check out http://learnboost.github.io/stylus
+// Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
+
+// Import CSS from "node_modules" and "bower_components"
+// thanks to Stylus' "import css" and "paths" options
+
+@import 'prism/themes/prism-okaidia.css'
+// Check out "bower_components/prism/themes/" for available themes
+
+$black       = #111
+$gold        = #ffcc00
+$lightYellow = #f0e7d5
+$white       = #ddd
+$serif       = didot, times new roman, serif
+$sans-serif  = futura, helvetica neue, helvetica, arial, sans-serif
+$monospace   = source code pro, consolas, courier new, monospace
+$endash      = '\2013'
+
+li
+  font-family: $serif
+  font-style:  italic
+  font-size:   1.0em
+  line-height: 1.6
+  margin:      .5em 0
+  transform:   translateX(-10px)
+  &:before
+    content:      $endash
+    margin-right: 14px
+
+blockquote
+  font-family: $serif
+  font-style:  normal
+  font-size:   1.6rem
+  line-height: 1.6
+
+  cite
+    display:     block
+    padding-top: 1em
+    font-size:   0.8em
+    font-weight: bold
+
+h1
+  font-family: $sans-serif
+
+h2
+  font-family: $sans-serif
+
+h3
+  font-family: $serif
+  font-style: italic
+
+h2 + ul
+  margin-top: 2rem
+
+a, u
+  padding-left: 0.3rem
+
+a, a:visited, u
+  text-decoration:     none
+  border-bottom:       none
+  text-shadow:
+    2px 0 0 $black,
+    2px 0 0 $black,
+    1px 0 0 $black,
+    1px 0 0 $black,
+    -1px 0 0 $black,
+    -1px 0 0 $black,
+    -2px 0 0 $black,
+    -2px 0 0 $black
+  background-image:    linear-gradient(to bottom, rgba(0,0,0,0) 50%, currentColor 50%);
+  background-repeat:   repeat-x;
+  background-size:     200px 2px;
+  background-position: 0 90%;
+
+pre
+  font-size: 1.35rem
+
+iframe
+  border: none
+  width: calc(100% - 40px)
+  height: calc(100% - 40px)
+
+.bespoke-backdrop
+  &-active
+    opacity: 1.0
+
+.bespoke-backdrop
+  background-repeat: no-repeat
+
+.bespoke-backdrop.b3
+  background-color:  $lightYellow
+  background-image:  url('../images/logo-b3.png')
+  background-size:   25%
+  background-repeat: no-repeat
+
+.bespoke-backdrop.ecosystem
+  background-position: center
+  background-color:    $white
+  background-image:    url('../images/ecosystem.png')
+
+.bespoke-backdrop.component
+  background-color: $gold
+
+.bespoke-slide.ecosystem
+  color: $black
+
+.bespoke-slide.intertitles
+  color: $black
+  h1
+    border-color: $black
+  a, a:visited, u
+    text-shadow:
+      2px 0 0 $gold,
+      2px 0 0 $gold,
+      1px 0 0 $gold,
+      1px 0 0 $gold,
+      -1px 0 0 $gold,
+      -1px 0 0 $gold,
+      -2px 0 0 $gold,
+      -2px 0 0 $gold
+
+.footnote
+  font-family: $serif
+  font-style:  italic
+  font-size: 1rem
+  position: absolute
+  bottom: 20px;
+  right: 20px;

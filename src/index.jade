@@ -1,0 +1,188 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title B3
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section.intertitles(data-bespoke-backdrop='component')
+        h4 The quest for a
+        h1 Modern<br>WordPress<br>Frontend
+        h4 WordCamp Lisbon &middot; May 2015
+
+      section
+        h3 WordPress&rsquo;s future is being written in
+        h2 JavaScript
+
+      section
+        blockquote
+          p.
+            &lsquo;We&rsquo;ve been tackling many of the core WordPress experiences<br>
+            and giving them intense JavaScript makeovers.&rsquo;
+          cite &mdash;<a href="http://inside.envato.com/the-future-of-wordpress/">Mark Jaquith</a>, core developer
+
+      section.ecosystem(data-bespoke-backdrop='ecosystem')
+        h3 Great, so we have all of these JavaScript... things.
+
+      section.ecosystem(data-bespoke-backdrop='ecosystem')
+        h2 Now what?
+
+      section(data-bespoke-backdrop='b3')
+
+      section.intertitles(data-bespoke-backdrop='component')
+        h1 B3
+
+      section
+        h2 B3 is a starter theme
+
+      section
+        h2 We did it<br>so you don&rsquo;t<br>have to
+
+      section
+        h3 Also, we were bored.
+
+      section.intertitles(data-bespoke-backdrop='component')
+        h2 Backend
+        h3 WordPress REST API
+
+      section
+        h3 The WordPress REST API is <u>awesome</u>.
+
+      section
+        h3 B3 integrates with the REST API out of the box.
+
+      section.intertitles(data-bespoke-backdrop='component')
+        h2 Structure
+        h3 Backbone.Marionette
+
+      section
+        h2 Backbone.js
+        ul.bullet
+          li Minimalistic.
+          li Optimized for RESTful interfaces.
+          li WordPress uses it already.
+          li Based on jQuery.
+          li Documentation and community support.
+
+      section
+        h2 Marionette.js
+        ul.bullet
+          li All in the family.
+          li Internal messaging stack.
+          li Maturity.
+
+      //- section
+      //-   h2 How it works
+      //-   h3 (Short version)
+      //-   ul.bullet
+      //-     li Router
+      //-     li Controller
+      //-     li Model (or Collection)
+      //-     li View
+
+      section.intertitles(data-bespoke-backdrop='component')
+        h2 Templating
+        h3 Dust by LinkedIn
+
+      section
+        h2 WordPress Templates
+        h3 The markup you know and love.
+        pre: code.language-markup.
+          &lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?&gt;
+            &lt;h2&gt;&lt;a href="&lt;?php the_permalink() ?&gt;"&gt;
+              &lt;?php the_title(); ?&gt;&lt;/a&gt;&lt;/h2&gt;
+            &lt;div&gt;&lt;?php the_content(); ?&gt;&lt;/div&gt;
+          &lt;?php endwhile; else: ?&gt;
+            &lt;p&gt;No posts to display.&lt;/p&gt;
+          &lt;?php endif; ?&gt;
+
+      section
+        h2 Dust Templates
+        h3 Clear syntax leaves PHP in the dust.
+        pre: code.language-markup.
+          {#posts}
+            &lt;h2&gt;&lt;a href="{link}"&gt;{title}&lt;/a&gt;
+            &lt;div&gt;{content}&lt;/div&gt;
+          {/posts}
+          {^posts}
+            &lt;p&gt;No posts to display.&lt;/p&gt;
+          {/posts}
+
+      section.intertitles(data-bespoke-backdrop='component')
+        h2 Frontend
+        h3 Bootstrap + Sass
+
+      section
+        h2 Bootstrap
+        ul
+          li Mobile-friendly grid.
+          li Vast community support.
+          li Sass preprocessor.
+
+      section
+        h2 Demo
+
+      section
+        iframe(src='http://demo.beebeebee.be/')
+
+      section
+        h2 WP REST API Caveats
+        ul.bullet
+          li Still under development.
+          li Some things still missing.
+          li Some things omitted by design.
+
+      section
+        h2 B3 API Extensions
+        ul.bullet
+          li Menus.
+          li Widgets.
+          li Permalinks.
+          li Developer-friendly.
+
+      section
+        h2.bullet Heartbeat API
+        h3.bullet B3 self-updates as new content is published.
+
+      section.intertitles(data-bespoke-backdrop='component')
+        h2 Ready &middot; Steady &middot; Go
+
+      section
+        h2 Zero effort
+        ul
+          li Custom post types and taxonomies.
+          li Menus, widgets and pretty permalinks.
+          li Mobile-friendly base stylesheet.
+          li Internationalization support.
+          li Search as you type.
+          li Live updates via the Heartbeat API.
+
+      section
+        h2 Developer perks
+        ul
+          li Best practices.
+          li Event-driven architecture.
+          li Clear, concise templates.
+          li Sass preprocessor.
+          li Build automation with Gulp.
+          li Unit tests with Jasmine.
+
+      section
+        h2 It&rsquo;s all yours
+        h3 Open source and free software.
+        p.footnote <sup>*</sup> Dual licensed under the MIT and GPL 2.0 licenses.
+
+      section
+        h3 Go forth and do awesome things.
+
+      section.intertitles(data-bespoke-hash='thank-you' data-bespoke-backdrop='component')
+        h2 Thank you
+        h3 Find us at <a href="http://beebeebee.be">beebeebee.be</a>.
+
+    script(src='build/build.js')
