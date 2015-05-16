@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>B3</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section data-bespoke-backdrop="component" class="intertitles">
+        <h4>The quest for a</h4>
+        <h1>Modern<br>WordPress<br>Frontend</h1>
+        <h4>WordCamp Lisbon &middot; May 2015</h4>
+      </section>
+      <section>
+        <h3>WordPress&rsquo;s future is being written in</h3>
+        <h2>JavaScript</h2>
+      </section>
+      <section>
+        <blockquote>
+          <p>
+            &lsquo;We&rsquo;ve been tackling many of the core WordPress experiences<br>
+            and giving them intense JavaScript makeovers.&rsquo;
+          </p>
+          <cite>&mdash;<a href="http://inside.envato.com/the-future-of-wordpress/">Mark Jaquith</a>, core developer</cite>
+        </blockquote>
+      </section>
+      <section data-bespoke-backdrop="ecosystem" class="ecosystem">
+        <h3>Great, so we have all of these JavaScript... things.</h3>
+      </section>
+      <section data-bespoke-backdrop="ecosystem" class="ecosystem">
+        <h2>Now what?</h2>
+      </section>
+      <section data-bespoke-backdrop="b3"></section>
+      <section data-bespoke-backdrop="component" class="intertitles">
+        <h1>B3</h1>
+      </section>
+      <section>
+        <h2>B3 is a starter theme</h2>
+      </section>
+      <section>
+        <h2>We did it<br>so you don&rsquo;t<br>have to</h2>
+      </section>
+      <section>
+        <h3>Also, we were bored.</h3>
+      </section>
+      <section data-bespoke-backdrop="component" class="intertitles">
+        <h2>Backend</h2>
+        <h3>WordPress REST API</h3>
+      </section>
+      <section>
+        <h3>The WordPress REST API is <u>awesome</u>.</h3>
+      </section>
+      <section>
+        <h3>B3 integrates with the REST API out of the box.</h3>
+      </section>
+      <section data-bespoke-backdrop="component" class="intertitles">
+        <h2>Structure</h2>
+        <h3>Backbone.Marionette</h3>
+      </section>
+      <section>
+        <h2>Backbone.js</h2>
+        <ul class="bullet">
+          <li>Minimalistic.</li>
+          <li>Optimized for RESTful interfaces.</li>
+          <li>WordPress uses it already.</li>
+          <li>Based on jQuery.</li>
+          <li>Documentation and community support.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Marionette.js</h2>
+        <ul class="bullet">
+          <li>All in the family.</li>
+          <li>Internal messaging stack.</li>
+          <li>Maturity.</li>
+        </ul>
+      </section>
+      <section data-bespoke-backdrop="component" class="intertitles">
+        <h2>Templating</h2>
+        <h3>Dust by LinkedIn</h3>
+      </section>
+      <section>
+        <h2>WordPress Templates</h2>
+        <h3>The markup you know and love.</h3>
+        <pre><code class="language-markup">&lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?&gt;
+  &lt;h2&gt;&lt;a href="&lt;?php the_permalink() ?&gt;"&gt;
+    &lt;?php the_title(); ?&gt;&lt;/a&gt;&lt;/h2&gt;
+  &lt;div&gt;&lt;?php the_content(); ?&gt;&lt;/div&gt;
+&lt;?php endwhile; else: ?&gt;
+  &lt;p&gt;No posts to display.&lt;/p&gt;
+&lt;?php endif; ?&gt;
+</code></pre>
+      </section>
+      <section>
+        <h2>Dust Templates</h2>
+        <h3>Clear syntax leaves PHP in the dust.</h3>
+        <pre><code class="language-markup">{#posts}
+  &lt;h2&gt;&lt;a href="{link}"&gt;{title}&lt;/a&gt;
+  &lt;div&gt;{content}&lt;/div&gt;
+{/posts}
+{^posts}
+  &lt;p&gt;No posts to display.&lt;/p&gt;
+{/posts}
+</code></pre>
+      </section>
+      <section data-bespoke-backdrop="component" class="intertitles">
+        <h2>Frontend</h2>
+        <h3>Bootstrap + Sass</h3>
+      </section>
+      <section>
+        <h2>Bootstrap</h2>
+        <ul>
+          <li>Mobile-friendly grid.</li>
+          <li>Vast community support.</li>
+          <li>Sass preprocessor.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Demo</h2>
+      </section>
+      <section>
+        <iframe src="http://demo.beebeebee.be/"></iframe>
+      </section>
+      <section>
+        <h2>WP REST API Caveats</h2>
+        <ul class="bullet">
+          <li>Still under development.</li>
+          <li>Some things still missing.</li>
+          <li>Some things omitted by design.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>B3 API Extensions</h2>
+        <ul class="bullet">
+          <li>Menus.</li>
+          <li>Widgets.</li>
+          <li>Permalinks.</li>
+          <li>Developer-friendly.</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="bullet">Heartbeat API</h2>
+        <h3 class="bullet">B3 self-updates as new content is published.</h3>
+      </section>
+      <section data-bespoke-backdrop="component" class="intertitles">
+        <h2>Ready &middot; Steady &middot; Go</h2>
+      </section>
+      <section>
+        <h2>Zero effort</h2>
+        <ul>
+          <li>Custom post types and taxonomies.</li>
+          <li>Menus, widgets and pretty permalinks.</li>
+          <li>Mobile-friendly base stylesheet.</li>
+          <li>Internationalization support.</li>
+          <li>Search as you type.</li>
+          <li>Live updates via the Heartbeat API.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Developer perks</h2>
+        <ul>
+          <li>Best practices.</li>
+          <li>Event-driven architecture.</li>
+          <li>Clear, concise templates.</li>
+          <li>Sass preprocessor.</li>
+          <li>Build automation with Gulp.</li>
+          <li>Unit tests with Jasmine.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>It&rsquo;s all yours</h2>
+        <h3>Open source and free software.</h3>
+        <p class="footnote"><sup>*</sup> Dual licensed under the MIT and GPL 2.0 licenses.</p>
+      </section>
+      <section>
+        <h3>Go forth and do awesome things.</h3>
+      </section>
+      <section data-bespoke-hash="thank-you" data-bespoke-backdrop="component" class="intertitles">
+        <h2>Thank you</h2>
+        <h3>Find us at <a href="http://beebeebee.be">beebeebee.be</a>.</h3>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
